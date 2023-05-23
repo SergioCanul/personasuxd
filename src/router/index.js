@@ -9,28 +9,23 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+
+    //Ruta formulario de registros
     {
       path: "/RegistroPersonas",
       name: "Registro de Personas",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/PersonasView.vue"),
     },
+    //Ruta listado de registros
     {
       path: "/ListaPersonas",
       name: "ListaPersonas",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/ListaPersonasView.vue"),
     },
+    //Ruta buscador de personas
     {
       path: "/BuscadorPersonas",
       name:"BuscadorPersonas",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/BuscadorPersonasView.vue")
     }
 
