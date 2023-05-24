@@ -349,7 +349,59 @@ export default {
 
 
           </div>
+          <!--COLUMNA MEDIA-->
           
+          <div class=" ml-5 bg-pink-500  p-3 rounded-lg">
+            <div class="w-full">
+              <h1 class="text-2xl  text-center font-bold  text-black ">INFORMACION PERSONAL</h1>
+              <h3 class="text-md  text-center font-semibold  text-white ">Cuentanos un poco mas acerca de ti llenando los siguiente </h3>
+              </div>
+             <!-- Biografia -->
+              <div class="w-full mt-4">
+                <label class="block text-black font-medium md:text-left my-2 md:mb-0">
+                Biografía:
+                </label>
+              
+              <!--Uso al componente-->
+              <TextArea @dataTA = "TextAreaB"></TextArea>
+
+            </div>
+
+              <!-- Objetivos -->
+              <div class="w-full mt-4">
+                <label class="block text-black font-medium md:text-left my-2 md:mb-0">
+                Objetivos:
+                </label>
+              <div v-for="(obj, index) in ArrayObjetivos">
+                <InputArray @dataA="Objetivoos" :index="index"> </InputArray>
+              </div>
+              <BotonEnviar v-on:click.prevent="this.ArrayObjetivos.push(NuevoObje)"> + </BotonEnviar>
+            </div>
+
+              <!-- Frustraciones  --> 
+              <div class="w-full mt-4">
+                <label class="block text-black font-medium md:text-left my-2 md:mb-0">
+                  Frustraciones:   
+                </label>
+                <div v-for="(frus, index) in ArrayFrustraciones">
+                  <InputArray @dataA="Frustracionees" :index="index"> </InputArray>
+                </div>
+              <BotonEnviar v-on:click.prevent="this.ArrayFrustraciones.push(NuevoFrus)"> + </BotonEnviar>
+              </div>
+
+             <!-- Marcas -->
+              <div class="w-full mt-4">
+                <label class="block text-black font-medium md:text-left my-2 md:mb-0">
+                  Tus marcas preferidas:
+                </label>
+                <input type="text" v-model="Marcas" class="w-full py-2.5 px-4 opacity-70 rounded-md bg-gray-100 focus:shadow focus:bg-white focus:outline-none" id="Marcas" placeholder="Separa cada marca con comas"/>
+              </div>
+
+          </div>
+          
+          
+      </form> 
+    </div>
     
   </div> 
 </div>
