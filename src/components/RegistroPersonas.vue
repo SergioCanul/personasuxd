@@ -466,6 +466,27 @@ export default {
 
               </div>
 
+              <!--Uso al componente-->
+              <InputSlider @porcentaje="SliderP3" ></InputSlider>
+              
+            </div>
+            
+            <div class="w-full mt-4">
+              <label class="block text-black font-bold md:text-left my-2 md:mb-0">
+                Estilo de vida
+              </label>
+
+              <div class="flex justify-between px-3  ">
+                <label class="text-black text-left md:text-left my-2 md:mb-0">
+                  Juicio (Planificado): <br>  {{ this.Personalidad4 }}%
+                </label>
+                
+                <label class="text-black text-end  mr-0 md:text-right my-2 md:mb-0">
+                  Percepción (Flexible): <br> {{ 100 - this.Personalidad4 }}%
+                </label>
+
+              </div>
+
               
       </form> 
     </div>
