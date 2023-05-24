@@ -399,7 +399,53 @@ export default {
 
           </div>
           
-          
+          <!--COLUMNA 3-->
+          <!-- Personalidades  -->
+          <div class="ml-5 bg-cyan-400 p-3 rounded-lg w-full ">
+
+            <h1 class="text-2xl  text-center font-bold  text-black">PERSONALIDAD</h1>
+            <h3 class="text-md  text-center font-semibold  text-white ">Dejanos conocer sobre tu personalidad mediante los siguientes criterios </h3>
+
+            <div class="w-full mt-4">
+              <label class="block text-black font-bold md:text-left my-2 md:mb-0">
+                Orientación Social  
+                <br>
+              </label>
+
+              <div class="flex justify-between px-3  ">
+                <label class="text-black  text-left md:text-left my-2 md:mb-0">
+                  Extrovertido: <br> {{ this.Personalidad1 }}%
+                </label>
+                
+                <label class="text-black  text-end  mr-0 md:text-right my-2 md:mb-0">
+                  Introvertido: <br> {{ 100 - this.Personalidad1 }}%
+                </label>
+
+              </div>
+
+              <!--Uso al componente-->
+              <InputSlider @porcentaje="SliderP1" ></InputSlider>
+            
+            </div>
+            
+            <div class="w-full mt-4">
+
+              <label class="block text-black font-bold md:text-left my-2 md:mb-0">
+                Forma de Percepción 
+              </label>
+
+              <div class="flex justify-between px-3  ">
+                <label class="text-black text-left md:text-left my-2 md:mb-0">
+                  Sensorial (Concreta): <br>  {{ this.Personalidad2 }}%
+                </label>
+                
+                <label class="text-black text-end  mr-0 md:text-right my-2 md:mb-0">
+                  Intuitiva: <br> {{ 100 - this.Personalidad2 }}%
+                </label>
+
+              </div>
+
+              
       </form> 
     </div>
     
