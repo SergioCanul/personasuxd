@@ -508,7 +508,18 @@ export default {
                   <InputSliderAr @porc="MotivacionesVal" :index="index"> </InputSliderAr>
                 </div>
 
-             
+              </div>
+              
+              <BotonEnviar v-on:click.prevent="this.ArrayMotivaciones.push(NuevoMot)"> + </BotonEnviar>
+              
+            </div>
+          </div>
+      </div>
+          <!--Boton Registrar-->
+                        
+          <BotonEnviar @click="Registro()" >
+              Enviar
+            </BotonEnviar>
       </form> 
     </div>
     
