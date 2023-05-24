@@ -487,7 +487,28 @@ export default {
 
               </div>
 
-              
+              <!--Uso al componente-->
+              <InputSlider @porcentaje="SliderP4" ></InputSlider>
+            </div>
+            
+            <!--Motivaciones-->
+            <div class="w-full mt-4">
+              <label class="block text-black font-bold md:text-left my-2 md:mb-0">
+                Motivaciones  
+              </label>
+
+              <div v-for="(mot, index) in ArrayMotivaciones"  class="flex">
+                <!-- Nombre Motivacion -->
+                <div class="w-full px-3 mt-4">
+                  
+                  <InputArray @dataA="MotivacionesText" :index="index"> </InputArray>
+                </div>
+                <!-- Porcentaje Motivacion  -->
+                <div class="w-full  mt-4">
+                  <InputSliderAr @porc="MotivacionesVal" :index="index"> </InputSliderAr>
+                </div>
+
+             
       </form> 
     </div>
     
