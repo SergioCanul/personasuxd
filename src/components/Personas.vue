@@ -300,7 +300,7 @@ export default {
     </div>
     <div class="py-15"  v-else="mostrarUno">
     <h1 class="font-bold text-white text-center item-center">
-      NO HAY ELEMENTOS PARA MOSTRAR
+      SELECCIONA UNA PERSONA PARA MOSTRAR
     </h1>
     </div>
         
