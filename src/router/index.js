@@ -23,11 +23,11 @@ const router = createRouter({
       component: () => import("../views/ListaPersonasView.vue"),
     },
     //Ruta buscador de personas
-    //{
-      //path: "/BuscadorPersonas",
-      //name:"BuscadorPersonas",
-      //component: () => import("../views/BuscadorPersonasView.vue")
-   // }
+    {
+      path: "/BuscadorPersonas",
+      name:"BuscadorPersonas",
+      component: () => import("../views/BuscadorPersonasView.vue")
+    }
 
 
 
